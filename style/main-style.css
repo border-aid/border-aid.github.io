@@ -52,6 +52,12 @@ main {
 
 .spotify-widget {
     border-radius:12px;
-    width:30rem;
-    height: 10rem;
+}
+
+.photo-slide img {
+    width:80%;
+}
+
+#joe-orellana-photos .photo-slide {
+    display:none;
 }
