@@ -1,0 +1,57 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111111;
+    color: #B3EFFF;
+  }
+  
+h1, h3, h5 {
+    color: #00CFFF;
+}
+
+h2, h4, h6 {
+    color: #00CFFF;
+}
+
+a {
+    color: #FFE46D;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF6DDF;
+    text-decoration: underline overline #FF6DDF;
+}
+
+header {
+    margin: 3rem;
+}
+
+nav button:hover {
+    background-color: #FFE46D;
+    color: #111111;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+button {
+    background-color: #FF6DDF;
+    color: #111111;
+    font-family: inherit;
+    padding: 0.5em;
+    border-radius: 2em;
+    border: 0.1em solid #FF6DDF;
+    margin: 0.3em;
+    font-weight: bolder;
+}
+
+main {
+    margin: 5rem;
+}
+
+.spotify-widget {
+    border-radius:12px;
+    width:30rem;
+    height: 10rem;
+}
