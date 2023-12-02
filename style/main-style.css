@@ -77,3 +77,8 @@ main {
 .joe-photo-slideshow.grid-container img {
     object-fit: contain;
 }
+
+#jacumba-supplies-gsheet {
+    height: 20rem;
+    width: 90%;
+}
