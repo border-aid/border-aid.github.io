@@ -82,3 +82,28 @@ main {
     height: 20rem;
     width: 90%;
 }
+
+#language-directory li{
+    font-size: x-large;
+}
+
+.general-flyer {
+    width: 80vw;
+    height: 95vh;
+}
+
+.download-btn {
+    background-color: #FF6DDF;
+    border-radius: 50px;
+    width: 20%;
+    text-align: center;
+}
+
+.download-btn:hover {
+    background-color: #FFE46D;
+}
+
+.download-btn img {
+    margin: 1rem;
+    object-fit: contain;
+}
