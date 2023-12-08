@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> hello from the <code>head</code> title </title>
+
+<link rel="stylesheet" href="./style/main-style.css">
+<link rel="stylesheet" media='(orientation: portrait) or (pointer: coarse) or (max-width: 1000px)' href="./style/mobile.css"/>
+<link rel="stylesheet" media='not ((orientation: portrait) or (pointer: coarse) or (max-width: 1000px))' href="./style/desktop.css"/>
+
+</head>
+
+<body>
+
+  <header>
+<h1> I am an <code>h1</code> header  </h1>
+
+</header>
+
+
+
+<main id="main-content">
+
+<section>
+
+    <h2> I am an <code>h2</code> header </h2>
+
+    <p>
+        <b> I am bold text </b> <br>
+        <i> I am italicized text </i> <br>
+    </p>
+
+    <ol>
+        <li>I am</li>
+        <li>an</li>
+        <li>ordered</li>
+        <li>list</li>
+    </ol>
+
+    <ul>
+        <li>I am</li>
+        <li>an</li>
+        <li>unordered</li>
+        <li>list</li>
+    </ul>
+
+    <s>this text is struck through</s>
+
+    <details>
+        <summary>
+            click me, I'm expandable!!!
+        </summary>
+        boo! now click again, and I'll go away.
+    </details>
+
+    this sentence is <br> written on only one <br> line in the HTML file, <br> but is spread across <br> several lines in the browser because of <code>br</code> elements, AKA line breaks
+
+</section>
+
+<section>
+    <!-- I am an HTML comment. I am only visible in the unrendered HTML text file. -->
+    <p>
+        <a target="_blank" title="hello from the title attribute of a hyperlink! because of the target=_blank attribute, i will open in a new tab" href="https://border-aid.github.io/">this text is hyperlinked</a>
+    </p>
+
+    <figure>
+        <img src="https://japanhouse.illinois.edu/uploads/general/_1200x630_crop_center-center_82_none/capybara-yuzuyu.jpeg?mtime=1642099928" alt="a capybara poking its head out of the water, with a yuzuyu on his head" />
+        <figcaption>hello from the figure caption! notice how the accompanying image is loaded from a URL instead of a "relative filepath"</figcaption>
+      </figure>
+
+      <img src="./media/lizard.png" alt="an emoji of a lizard">
+      <p>Mr. Lizard, seen above, is loaded with a relative path instead of a URL. this means he lives in the same folder, on the same server (computer), as me!</p>
+
+      <h3> I'm an<i><code>h3</code> element and I am</i> <a href="https://border-aid.github.io/">combining <b>several <s>text styling</s></b></a> elements at once </h3>
+
+      <div class="tg-wrap"><table style="border: 3px solid white;">
+        <thead>
+          <tr>
+            <th>I am</th>
+            <th>a</th>
+            <th>table</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>check</td>
+            <td>out</td>
+            <td>my</td>
+          </tr>
+          <tr>
+            <td><code>style</code></td>
+            <td>attribute</td>
+            <td></td>
+          </tr>
+        </tbody>
+        </table></div>
+
+</section>
+
+</main>
+
+</body>
+
+</html>
