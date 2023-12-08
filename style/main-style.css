@@ -90,6 +90,7 @@ main {
 .general-flyer {
     width: 80vw;
     height: 95vh;
+    background-color: #FFFFFF;
 }
 
 .download-btn {
