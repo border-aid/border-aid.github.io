@@ -6,6 +6,7 @@
 
 <link rel="stylesheet" href="./style/main-style.css">
 <link rel="stylesheet" href="./style/shelter-photos.css">
+<link rel="stylesheet" href="./style/imagegridhover.css">
 <link rel="stylesheet" media='(orientation: portrait) or (pointer: coarse) or (max-width: 1000px)' href="./style/mobile.css"/>
 <link rel="stylesheet" media='not ((orientation: portrait) or (pointer: coarse) or (max-width: 1000px))' href="./style/desktop.css"/>
 
@@ -136,32 +137,72 @@
 
 <section> 
 
-<style>
-.grid { 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));
-  grid-gap: 10px;
-  align-items: start;
-  }
-.grid img {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  max-width: 100%;
-}
-</style>
-<main class="grid">
+  <h1 class="page_title">CSS Image Grid with Hover</h1>
 
-  <img src="media\shelter-photos\yurt_01\IMG_0120.JPG" alt="Sample photo">
-  <img src="media\shelter-photos\yurt_01\IMG_0121.JPG" alt="Sample photo">
-  <img src="media\shelter-photos\yurt_01\IMG_0122.JPG" alt="Sample photo">
-  <img src="media\shelter-photos\yurt_01\IMG_0123.JPG" alt="Sample photo">
-  <img src="media\shelter-photos\yurt_01\IMG_0124.JPG" alt="Sample photo">
-  <img src="media\shelter-photos\yurt_01\IMG_0125.JPG" alt="Sample photo">
-  <img src="media\shelter-photos\yurt_01\IMG_0126.JPG" alt="Sample photo">
-  <img src="media\shelter-photos\yurt_01\IMG_0127.JPG" alt="Sample photo">
-  
-
-</main>
+  <div class="row">
+    <div class="container">
+      <div class="test_box box-01 col-xs-6 col-md-4">
+        <div class="inner">
+          <a href="#" class="test_click">
+            <div class="flex_this">
+              <h1 class="test_title">Title</h1>
+              <span class="test_link">Link</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="test_box box-02 col-xs-6 col-md-4">
+        <div class="inner">
+          <a href="#" class="test_click">
+            <div class="flex_this">
+              <h1 class="test_title">Title</h1>
+              <span class="test_link">Link</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="test_box box-03 col-xs-6 col-md-4">
+        <div class="inner">
+          <a href="#" class="test_click">
+            <div class="flex_this">
+              <h1 class="test_title">Title</h1>
+              <span class="test_link">Link</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="test_box box-04 col-xs-6 col-md-4">
+        <div class="inner">
+          <a href="#" class="test_click">
+            <div class="flex_this">
+              <h1 class="test_title">Title</h1>
+              <span class="test_link">Link</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="test_box box-05 col-xs-6 col-md-4">
+        <div class="inner">
+          <a href="#" class="test_click">
+            <div class="flex_this">
+              <h1 class="test_title">Title</h1>
+              <span class="test_link">Link</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="test_box box-06 col-xs-6 col-md-4">
+        <div class="inner">
+          <a href="#" class="test_click">
+            <div class="flex_this">
+              <h1 class="test_title">Title</h1>
+              <span class="test_link">Link</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </section>
 
