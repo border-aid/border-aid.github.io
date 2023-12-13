@@ -24,7 +24,13 @@ main {
 
 .joe-photo-slideshow.grid-container {
     width: 100%;
+    min-height: 100vh;
     max-height: 100vh;
+    margin-bottom: 5rem;
+
+    overflow: scroll;
+    scrollbar-color: #FFE46D #B3EFFF;
+    scrollbar-width: auto;
 }
 
 img.joe-photo {
