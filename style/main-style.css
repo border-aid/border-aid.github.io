@@ -85,3 +85,8 @@ button {
     margin: 1rem;
     object-fit: contain;
 }
+
+#articles li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
