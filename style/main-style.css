@@ -50,6 +50,11 @@ main {
     margin: 5rem;
 }
 
+.logo {
+    width: 5rem;
+    vertical-align: middle;
+}
+
 .spotify-widget {
     border-radius:12px;
 }
