@@ -1,3 +1,4 @@
+
 #moon-yurt-gallery {
     width: 90%;
 }
@@ -15,4 +16,53 @@
 
 #moon-yurt-build, #recommended-shelter-reading {
     margin: 2rem;
+}
+
+main {
+    margin: 1rem;
+    width: 90%;
+}
+
+.youtube-embed {
+    width: 90%;
+}
+
+.general-flyer {
+    width: 100%;
+    height: 90vh;
+    background-color: #FFFFFF;
+}
+
+#youtube-gallery .grid-item {
+    padding: 1rem;
+}
+
+.youtube-embed {
+    width: 95%;
+    height: 50vh;
+}
+
+.joe-photo-slideshow.grid-container {
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    margin-bottom: 5rem;
+
+    overflow: scroll;
+    scrollbar-color: #FFE46D #B3EFFF;
+    scrollbar-width: auto;
+}
+
+img.joe-photo {
+    object-fit: scale-down;
+    width: 100%;
+}
+
+blockquote.joe-caption {
+    font-size: smaller;
+    height: 30vh;
+}
+
+#back-btn, #fwd-btn {
+    width: 30%;
 }
