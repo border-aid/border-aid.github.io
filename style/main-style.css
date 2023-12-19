@@ -55,25 +55,18 @@ main {
     vertical-align: middle;
 }
 
+
 .spotify-widget {
     border-radius:12px;
 }
 
-.photo-slide img {
-    width:80%;
-}
 
 #joe-orellana-photos .photo-slide {
     display:none;
 }
 
 
-.joe-photo-slideshow.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 1fr;
-    height: 80%;
-}
+
 
 .joe-photo-slideshow.grid-container .grid-item {
     padding: 1rem;
@@ -83,18 +76,8 @@ main {
     object-fit: contain;
 }
 
-#jacumba-supplies-gsheet {
-    height: 20rem;
-    width: 90%;
-}
-
 #language-directory li{
     font-size: x-large;
-}
-
-.general-flyer {
-    width: 80vw;
-    height: 95vh;
 }
 
 .download-btn {
@@ -113,6 +96,10 @@ main {
     object-fit: contain;
 }
 
+#articles li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 #moon-yurt-gallery {
     margin: 2rem auto; 
