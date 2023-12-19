@@ -2,23 +2,24 @@
 <html lang="en">
 
 <head>
-<title> Shelter </title>
+<title> Border Aid: Building Shelters </title>
 
 <link rel="stylesheet" href="../style/main-style.css">
 
-<link rel="stylesheet" href="../style/imagegridhover.css">
+<link rel="stylesheet" href="../style/click-img-to-enlarge.css">
 
 <link rel="stylesheet" media='(orientation: portrait) or (pointer: coarse) or (max-width: 1000px)' href="../style/mobile.css"/>
 
 <link rel="stylesheet" media='not ((orientation: portrait) or (pointer: coarse) or (max-width: 1000px))' href="../style/desktop.css"/>
 
+<script type="text/javascript" src="../scripts.js"></script>
+
 </head>
 
 <body>
 
-  <header>
-<h1> Shelter </h1>
-<i>please excuse my appearance, i am under construction by busy volunteers!</i>
+<header>
+<h1> Border Aid: Building Shelters </h1>
 
 <nav>
 
@@ -53,18 +54,24 @@
 
 <div id="moon-yurt-gallery" class="gallery">
 
-  <img id="pic-1" src="../media\shelter-photos\yurt_01\IMG_6334 - James Stout.jpeg" alt="Gallery image 1">
+  <img id="pic-1" onclick="show_modal_img(this.id)" src="../media\shelter-photos\yurt_01\IMG_6334 - James Stout.jpeg" alt="Gallery image 1">
 
-  <img id="pic-2" src="../media\shelter-photos\yurt_01\IMG_6335 - James Stout.jpeg" alt="Gallery image 2">
+  <img id="pic-2" onclick="show_modal_img(this.id)" src="../media\shelter-photos\yurt_01\IMG_6335 - James Stout.jpeg" alt="Gallery image 2">
 
-  <img id="pic-3" src="../media\shelter-photos\yurt_01\IMG_6338 - James Stout.jpeg" alt="Gallery image 3">
+  <img id="pic-3" onclick="show_modal_img(this.id)" src="../media\shelter-photos\yurt_01\IMG_6338 - James Stout.jpeg" alt="Gallery image 3">
 
-  <img id="pic-4" src="../media\shelter-photos\yurt_01\IMG_6339 - James Stout.jpeg" alt="Gallery image 4">
+  <img id="pic-4" onclick="show_modal_img(this.id)" src="../media\shelter-photos\yurt_01\IMG_6339 - James Stout.jpeg" alt="Gallery image 4">
 
-  <img id="pic-5" src="../media\shelter-photos\yurt_01\IMG_6341 - James Stout.jpeg" alt="Gallery image 5">
+  <img id="pic-5" onclick="show_modal_img(this.id)" src="../media\shelter-photos\yurt_01\IMG_6341 - James Stout.jpeg" alt="Gallery image 5">
 
-  <img id="pic-6" src="../media\shelter-photos\yurt_01\IMG_6345 - James Stout.jpeg" alt="Gallery image 6">
+  <img id="pic-6" onclick="show_modal_img(this.id)" src="../media\shelter-photos\yurt_01\IMG_6345 - James Stout.jpeg" alt="Gallery image 6">
 
+</div>
+
+<div id="img-modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
 </div>
 
 
