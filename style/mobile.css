@@ -1,3 +1,23 @@
+
+#moon-yurt-gallery {
+    width: 90%;
+}
+
+.blueprints img {
+    width: 100%;
+}
+
+#dalal-cover {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#moon-yurt-build, #recommended-shelter-reading {
+    margin: 2rem;
+}
+
 main {
     margin: 1rem;
     width: 90%;
