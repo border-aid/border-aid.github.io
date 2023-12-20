@@ -10,4 +10,4 @@
 
 ## Notes
 
-`clean-pdfs.sh` is the script used to strip metadata from PDFs and optimize them.
+`clean-pdfs.sh` is the script used to strip metadata from PDFs and optimize them. It uses [ExifTool](https://exiftool.org/) and [QPDF](https://github.com/qpdf/qpdf), and assumes that they have been downloaded and built already.

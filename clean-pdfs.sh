@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 CWD=$(pwd)
+MEDIA_DIR="$CWD/media"
 PDF_DIR="$CWD/media/general-flyers"
 EXIF_LOC="$HOME/Downloads/Image-ExifTool-12.70/exiftool"
 QPDF_LOC="$HOME/Downloads/qpdf/build/qpdf/qpdf"
@@ -62,6 +63,17 @@ qpdf_linearize_extant_pdfs() {
         fi
 
     done
+
+    for flyer in $MEDIA_DIR/*.pdf ; do
+
+        $QPDF_LOC --linearize "$flyer" --replace-input
+        RET=$?
+
+        if [ $RET -ne 0 ]; then
+            echo "ERROR = $RET"
+        fi
+
+    done
 }
 
 
@@ -70,6 +82,12 @@ $EXIF_LOC -all:all= $PDF_DIR/*.pdf
 RET=$?
 if [ $RET -eq 0 ]; then
     rm $PDF_DIR/*.pdf_original
+fi
+
+$EXIF_LOC -all:all= $MEDIA_DIR/*.pdf
+RET=$?
+if [ $RET -eq 0 ]; then
+    rm $MEDIA_DIR/*.pdf_original
 fi
 
 qpdf_linearize_extant_pdfs
