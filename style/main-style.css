@@ -1,3 +1,32 @@
+/* Screenreader Navigation Feature in Navigation Bar */
+a#skip-to-content {
+    font-size: 0vh;
+	position: absolute;
+	top:-40px;
+	left:0px;
+	-webkit-transition: top .5s ease-out;
+    transition: top .5s ease-out;
+    z-index: 100;
+}
+
+a#skip-to-content:focus {
+	position:absolute;
+	left:0px;
+	top:0px;
+	outline-color:transparent;	
+	-webkit-transition: top .05s ease-in;
+    transition: top .05s ease-in;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	a#skip-to-content {
+		transition-duration: 0.001ms !important;
+	}
+}
+/* fin */
+
+
+
 body{
     font-family: Helvetica, sans-serif;
     background-color: #111111;
