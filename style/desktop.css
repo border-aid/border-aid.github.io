@@ -45,6 +45,20 @@ main {
     background-color: #FFFFFF;
 }
 
+.border-aid-letter {
+    width: 45vw;
+    height: 95vh;
+    background-color: #FFFFFF;
+}
+
+#letters {
+    display: flex;
+}
+
+#letters article {
+    margin-right: 1rem;
+}
+
 .photo-slide img {
     width:80%;
 }

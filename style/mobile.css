@@ -66,3 +66,14 @@ blockquote.joe-caption {
 #back-btn, #fwd-btn {
     width: 30%;
 }
+
+.border-aid-letter {
+    width: 90vw;
+    height: 95vh;
+    background-color: #FFFFFF;
+}
+
+#jacumba-supplies-gsheet {
+    height: 20rem;
+    width: 90%;
+}
