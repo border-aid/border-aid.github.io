@@ -90,4 +90,5 @@ if [ $RET -eq 0 ]; then
     rm $MEDIA_DIR/*.pdf_original
 fi
 
+qpdf_linearize_new_pdfs
 qpdf_linearize_extant_pdfs
