@@ -55,7 +55,7 @@ a:hover {
     direction: rtl;
 }
 
-header {
+header, footer {
     margin: 3rem;
 }
 
@@ -84,6 +84,7 @@ main {
 }
 
 .logo {
+    margin: 1rem;
     width: 5rem;
     vertical-align: middle;
 }
