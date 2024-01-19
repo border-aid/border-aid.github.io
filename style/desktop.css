@@ -4,13 +4,13 @@ main {
     width: 90%;
 }
 
-#ichh-eps.grid-container {
+#ichh-eps.grid-container , #lltwid-podcast-eps.grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
 
-#ichh-eps.grid-container .grid-item {
+#ichh-eps.grid-container .grid-item, #lltwid-podcast-eps.grid-container .grid-item {
     padding: 1rem;
 }
 
