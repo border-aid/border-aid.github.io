@@ -4,6 +4,10 @@ main {
     width: 90%;
 }
 
+.qr-code {
+    width: 20em;
+}
+
 #ichh-eps.grid-container , #lltwid-podcast-eps.grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

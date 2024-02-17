@@ -61,11 +61,9 @@ def add_articles_to_rss(rss_channel):
                 article_description = "No summary available"
 
         
-            # check if publisher fits list of known RSS feeds so we can include the RSS URL in our new item
-                
-            # this could be automated with BS4 searching for <link type="application/rss+xml" href="..."> items on the site home, but BS4 isn't finding the links for some reason
-            """
+            
             try:
+                # this could be automated with BS4 searching for <link type="application/rss+xml" href="..."> items on the site home, but BS4 isn't finding the links for some reason
                 outlet_home_html = requests.get(urlparse(url).netloc, timeout=3).content
                 outlet_soup = BeautifulSoup(outlet_home_html, 'html.parser')
 
@@ -78,34 +76,37 @@ def add_articles_to_rss(rss_channel):
                     if r.attrs['type'] == "application/rss+xml":
                         source_rss = r.attrs['href']
             except:
+                # check if publisher fits list of known RSS feeds so we can include the RSS URL in our new item
                 source_rss = ""
-            """
-
             
-            if "San Diego Union-Tribune" in outlet:
-                source_rss = "https://www.sandiegouniontribune.com/index.rss"
-            elif "Left Coast Right Watch" in outlet:
-                source_rss = "https://leftcoastrightwatch.org/index.xml"
-            elif "CalMatters" in outlet:
-                source_rss = "https://calmatters.org/feed/"
-            elif "KPBS" in outlet:
-                source_rss = "https://www.kpbs.org/index.rss"
-            elif "San Diego Magazine" in outlet:
-                source_rss = "https://sandiegomagazine.com/feed/"
-            elif "ABC 10 News" in outlet:
-                source_rss = "https://www.10news.com/index.rss"
-            elif "Telemundo 20" in outlet:
-                source_rss = "https://www.telemundo20.com/?rss=y"
-            elif "LA Times" in outlet:
-                source_rss = "https://www.latimes.com/index.rss"
-            elif "Border Report" in outlet:
-                source_rss = "https://www.borderreport.com/feed/"
-            elif "Scripps News" in outlet:
-                source_rss = "https://scrippsnews.com/feedrss/rss/100/"
-            elif "France 24" in outlet:
-                source_rss = "https://www.france24.com/en/rss"
-            else:
-                source_rss = ""
+                if "San Diego Union-Tribune" in outlet:
+                    source_rss = "https://www.sandiegouniontribune.com/index.rss"
+                elif "Left Coast Right Watch" in outlet:
+                    source_rss = "https://leftcoastrightwatch.org/index.xml"
+                elif "CalMatters" in outlet:
+                    source_rss = "https://calmatters.org/feed/"
+                elif "KPBS" in outlet:
+                    source_rss = "https://www.kpbs.org/index.rss"
+                elif "San Diego Magazine" in outlet:
+                    source_rss = "https://sandiegomagazine.com/feed/"
+                elif "ABC 10 News" in outlet:
+                    source_rss = "https://www.10news.com/index.rss"
+                elif "Telemundo 20" in outlet:
+                    source_rss = "https://www.telemundo20.com/?rss=y"
+                elif "LA Times" in outlet:
+                    source_rss = "https://www.latimes.com/index.rss"
+                elif "Border Report" in outlet:
+                    source_rss = "https://www.borderreport.com/feed/"
+                elif "Scripps News" in outlet:
+                    source_rss = "https://scrippsnews.com/feedrss/rss/100/"
+                elif "France 24" in outlet:
+                    source_rss = "https://www.france24.com/en/rss"
+                elif "Capital & Main" in outlet:
+                    source_rss = "https://capitalandmain.com/feed"
+                elif "NBC 7 San Diego" in outlet:
+                    source_rss = "https://www.nbcsandiego.com/?rss=y"
+                elif "Hispanic LA" in outlet:
+                    source_rss = "https://hispanicla.com/feed"
 
 
             # build new RSS Item
@@ -120,7 +121,7 @@ def add_articles_to_rss(rss_channel):
             rss_description = ET.SubElement(rss_item, 'description')
             rss_description.text = article_description
 
-            rss_author = ET.SubElement(rss_item, 'dc:creator')
+            rss_author = ET.SubElement(rss_item, 'author')
             rss_author.text = author
 
             rss_source = ET.SubElement(rss_item, 'source', {'url' : source_rss})
@@ -128,6 +129,27 @@ def add_articles_to_rss(rss_channel):
         
             rss_pubDate = ET.SubElement(rss_item, 'pubDate')
             rss_pubDate.text = pub_date
+
+
+
+def add_videos_to_rss(rss_channel):
+    with open(INFILE) as inf:
+        soup = BeautifulSoup(inf, 'html.parser')
+
+        video_items = soup.select('#youtube-gallery .grid-item')
+    
+        for v in video_items:
+            
+            vid_title = v.h4
+            vid_embed = v.iframe
+            link = vid_embed.attrs['src']
+
+            pub_details = v.contents[2].text
+
+            pub_date = pub_details.split(" by ")[0].replace("Published ", "").strip()
+            print(pub_date)
+            #link = a.attrs['href']
+            #article_title = a.text
 
 
 
@@ -148,7 +170,7 @@ channel_build_date.text = dt.datetime.now().strftime('%a %d %b %Y, %I:%M%p')
 
 
 add_articles_to_rss(rss_channel)
-
+#add_videos_to_rss(rss_channel)
 
 tree = ET.ElementTree(rss_doc)
 tree.write(OUTFILE, xml_declaration=True, encoding="UTF-8")

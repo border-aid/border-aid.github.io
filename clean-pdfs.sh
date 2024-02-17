@@ -37,7 +37,7 @@ for flyer in $PDF_DIR/General*.pdf ; do
         let COUNTER=COUNTER+1
     done
 
-    OUTFILE="$PDF_DIR/general-flyer-$DATE-$TRANSLATOR-$LANG.pdf"
+    OUTFILE="$PDF_DIR/jacumba-flyer-$DATE-$TRANSLATOR-$LANG.pdf"
     echo "$OUTFILE"
 
     $QPDF_LOC --linearize "$flyer" "$OUTFILE"
@@ -53,7 +53,7 @@ done
 
 
 qpdf_linearize_extant_pdfs() {
-    for flyer in $PDF_DIR/general-flyer-*.pdf ; do
+    for flyer in $PDF_DIR/*-flyer-*.pdf ; do
 
         $QPDF_LOC --linearize "$flyer" --replace-input
         RET=$?
@@ -90,5 +90,5 @@ if [ $RET -eq 0 ]; then
     rm $MEDIA_DIR/*.pdf_original
 fi
 
-qpdf_linearize_new_pdfs
+#qpdf_linearize_new_pdfs
 qpdf_linearize_extant_pdfs
