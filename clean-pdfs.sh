@@ -76,7 +76,7 @@ qpdf_linearize_extant_pdfs() {
     done
 }
 
-
+#pdfseparate ./media/general-flyers/W8\ Flier\ -\ 10\ languages.pdf %d.pdf
 
 $EXIF_LOC -all:all= $PDF_DIR/*.pdf
 RET=$?

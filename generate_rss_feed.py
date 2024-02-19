@@ -140,9 +140,11 @@ def add_videos_to_rss(rss_channel):
     
         for v in video_items:
             
-            vid_title = v.h4
+            vid_title = v.h4.text
+            print(vid_title)
             vid_embed = v.iframe
             link = vid_embed.attrs['src']
+            print(vid_embed)
 
             pub_details = v.contents[2].text
 
