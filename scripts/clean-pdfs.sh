@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+cd ..
 CWD=$(pwd)
 MEDIA_DIR="$CWD/media"
 PDF_DIR="$CWD/media/general-flyers"

@@ -6,8 +6,8 @@ from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
 
-INFILE = "./what-is-happening.html"
-OUTFILE = "./rss.xml"
+INFILE = "../what-is-happening.html"
+OUTFILE = "../rss.xml"
 
 
 
