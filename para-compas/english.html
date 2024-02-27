@@ -6,6 +6,11 @@
   </title>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <style>
+   .rtl-text {
+    direction: rtl;
+}
+  </style>
   <link href="../style/main-style.css" rel="stylesheet"/>
   <link href="../style/mobile.css" media="(orientation: portrait) or (pointer: coarse) or (max-width: 1000px)" rel="stylesheet"/>
   <link href="../style/desktop.css" media="not ((orientation: portrait) or (pointer: coarse) or (max-width: 1000px))" rel="stylesheet">
@@ -15,19 +20,24 @@
   <header>
    <h1>
     If You Are in a Border Camp
+    <a href="#footer" id="jump-to-footer" title="For ease of use by the migrants we serve, this site may refer to open air detention sites as 'border camps', 'outdoor holding sites', or similar. However, make no mistake: these are all still the same outdoor detention sites maintained by CBP.">
+     *
+    </a>
    </h1>
    <nav>
     <a href="#main-content" id="skip-to-content" title="Skip to main content">
      Skip to main content
     </a>
-    <a href="../index.html" target="_self">
+    <a href="../index.html" id="home-btn" target="_self">
      <button>
       Home
      </button>
     </a>
-    <!--<a target="_self" href="./english/hospital.html">
-        <button>If You Go to the Hospital</button>
-    </a>-->
+    <a href="./english/hospital.html" id="hospital-btn" target="_self">
+     <button>
+      If You Go to the Hospital
+     </button>
+    </a>
    </nav>
   </header>
   <main id="main-content">
@@ -215,5 +225,8 @@
     </a>
    </div>
   </main>
+  <footer id="footer">
+   For ease of use by the migrants we serve, this site may refer to open air detention sites as 'border camps', 'outdoor holding sites', or similar. However, make no mistake: these are all still the same outdoor detention sites maintained by CBP.
+  </footer>
  </body>
 </html>
