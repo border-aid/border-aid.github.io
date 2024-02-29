@@ -179,9 +179,10 @@ translation_dict[("spanish", "footer")] = ""
 translation_dict[("turkish", "footer")] = ""
 translation_dict[("ukrainian", "footer")] = ""
 translation_dict[("urdu", "footer")] = ""
-translation_dict[("uzbek", "footer")] = ""
-translation_dict[("vietnamese", "footer")] = ""
-translation_dict[("luganda", "footer")] = ""
+translation_dict[("uzbek", "footer")] = "Biz xizmat ko‘rsatayotgan migrantlar uchun qulaylik yaratish maqsadida ushbu sayt ochiq havoda saqlash joylarini “chegara lagerlari”, “ochiq havoda saqlash joylari” yoki shunga o‘xshash tarzda ko‘rsatishi mumkin. Biroq, xato qilmang: bularning barchasi CBP tomonidan boshqariladigan bir xil ochiq qamoqxonalardir."
+translation_dict[("vietnamese", "footer")] = "Để những người di cư mà chúng tôi phục vụ dễ sử dụng, trang này có thể gọi các địa điểm giam giữ ngoài trời là 'trại biên giới', 'địa điểm giam giữ ngoài trời' hoặc tương tự. Tuy nhiên, đừng nhầm lẫn: đây vẫn là những địa điểm giam giữ ngoài trời do CBP duy trì."
+translation_dict[("luganda", "footer")] = "Okusobola okwanguyirwa okukozesa ababundabunda be tuweereza, omukutu guno guyinza okuyita ebifo eby’okusibiramu abantu mu bbanga nga ‘enkambi z’ensalo’, ‘ebifo eby’ebweru w’okusibira abantu’, oba ebifaananako bwe bityo. Kyokka tokola nsobi: bino byonna bikyali bifo bye bimu eby’okusibirwamu abantu nga bikuumibwa CBP."
+
 
 
 
