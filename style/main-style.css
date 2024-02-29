@@ -89,6 +89,16 @@ main {
     vertical-align: middle;
 }
 
+section {
+    max-width: 100vw;
+}
+
+.airport-map {
+    object-fit: contain;
+    max-width: inherit;
+    width: 100%;
+    margin:1rem;
+}
 
 .spotify-widget {
     border-radius:12px;
