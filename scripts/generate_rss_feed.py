@@ -30,16 +30,20 @@ def add_articles_to_rss(rss_channel):
             url = link_item.attrs['href']
 
             if "Community Corrections" in item:
-                item = item.split("Community Corrections")[0].strip()
-                article_title = item.split(' by ')[0].strip()
+                #item = item.split("Community Corrections")[0].strip()
+                item = article_items.__getitem__(i).summary.text.strip().splitlines()[0]
+                print(item)
+                article_title = item.split(" by ")[0].strip()
+                print(article_title)
 
             else:
                 article_title = link_item.text.strip()
         
-            item = item.replace(article_title, '')
-            author = item.split(' for ')[0].replace(' by ', '').strip()
-            outlet = item.split(' for ')[1].split(' on ')[0].strip()
-            pub_date = item.split(' on ')[1].strip()
+            item = item.replace(article_title, "")
+            author = item.split(" for ")[0].replace(" by ", "").strip()
+            print(author)
+            outlet = item.split(" for ")[1].split(" on ")[0].strip()
+            pub_date = item.split(" on ")[1].strip()
 
             #month_day_year = pub_date.split(' ')
             #month = dt.datetime.strptime(month_day_year[0][:3], '%b').month
