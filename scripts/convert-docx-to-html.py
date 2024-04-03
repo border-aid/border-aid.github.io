@@ -26,6 +26,7 @@ template_dir = para_compas_dir + "templates/"
 in_oads_template = template_dir + "in-oads-template.html"
 airport_template = template_dir + "airport-template.html"
 old_town_template = template_dir + "old-town-template.html"
+hospital_template = template_dir + "hospital-template.html"
 
 copytext_json_file = scripts_dir + "/copytext-trxl8ns.json"
 
@@ -408,6 +409,56 @@ def add_old_town_page_features(page_soup, language, lang_copytext):
 
 
 
+def add_hospital_page_features(page_soup, language, lang_copytext):
+    page_soup.head.title.string = lang_copytext["If You Go to the Hospital"]
+    page_soup.header.h1.string = lang_copytext["If You Go to the Hospital"]
+    
+    home_label = lang_copytext["Home Page"]
+    home_btn = page_soup.new_tag("button")
+    home_btn.string = home_label
+    home_link = page_soup.find(attrs={'id': 'home-btn'})
+    home_link.append(home_btn)
+
+    oads_label = lang_copytext["If You Are in a Border Camp"]
+    oads_btn = page_soup.new_tag("button")
+    oads_btn.string = oads_label
+    oads_link = page_soup.find(attrs={'id': 'oads-btn'})
+    oads_link.append(oads_btn)
+
+    # Airport
+    airport_label = lang_copytext["If You Are at the Airport"]
+    airport_btn = page_soup.new_tag("button")
+    airport_btn.string = airport_label
+    airport_link = page_soup.find(attrs={'id': 'airport-btn'})
+    airport_link.append(airport_btn)
+
+    # Old Town Station
+    old_town_label = lang_copytext["Old Town Transit Station"]
+    old_town_btn = page_soup.new_tag("button")
+    old_town_btn.string = old_town_label
+    old_town_link = page_soup.find(attrs={'id': 'old-town-btn'})
+    old_town_link.append(old_town_btn)
+
+    # Legal Resources
+    legal_label = lang_copytext["Legal Resources"]
+    legal_btn = page_soup.new_tag("button")
+    legal_btn.string = legal_label
+    legal_link = page_soup.find(attrs={'id': 'legal-resource-btn'})
+    legal_link.append(legal_btn)
+
+    skip_nav_msg = lang_copytext["Skip to main content"]
+    skip_nav_elem = page_soup.find(attrs={'id': 'skip-to-content'})
+    skip_nav_elem.string = skip_nav_msg
+    skip_nav_elem['title'] = skip_nav_msg
+
+    page_soup.find(attrs={'id': 'old-town-btn'})['href'] = "old-town-station.html"
+    page_soup.find(attrs={'id': 'oads-btn'})['href'] = "../" + language + ".html"
+    page_soup.find(attrs={'id': 'airport-btn'})['href'] = "airport.html"
+    page_soup.find(attrs={'id': 'legal-resource-btn'})['href'] = "legal.html"
+
+
+
+
 def make_html_page(language, iso639_code, html_filename, template_soup, file, page_type, pdf_filename):
     #lang_copytext = None
     with open(copytext_json_file, "r") as inf:
@@ -431,6 +482,8 @@ def make_html_page(language, iso639_code, html_filename, template_soup, file, pa
             add_airport_page_features(page_soup, language, lang_copytext)
         elif page_type == "Old Town Transit Station":
             add_old_town_page_features(page_soup, language, lang_copytext)
+        elif page_type == "If You Go to the Hospital":
+            add_hospital_page_features(page_soup, language, lang_copytext)
 
         if ((language == "arabic") or (language == "farsi") or (language == "urdu") ):
             page_soup.body['class'] = "rtl-text"
@@ -562,8 +615,6 @@ def generate_airport_pages():
         page_soup = make_html_page(language, iso639_code, html_filename, template_soup, file, "If You Are at the Airport", None)
 
 
-#generate_airport_pages()
-
 
 def generate_old_town_pages():
     with open(old_town_template, "r") as template_file:
@@ -589,51 +640,32 @@ def generate_old_town_pages():
 
         page_soup = make_html_page(language, iso639_code, html_filename, template_soup, file, "Old Town Transit Station", None)
 
-generate_old_town_pages()
 
-"""
- <header>
-<h1>
- If You Are in a Border Camp
- <a href="#footer" id="jump-to-footer" title="For ease of use by the migrants we serve, this site may refer to open air detention sites as 'border camps', 'outdoor holding sites', or similar. However, make no mistake: these are all still the same outdoor detention sites maintained by CBP.">
-  *
- </a>
-</h1>
 
-<nav>
+def generate_hospital_pages():
+    with open(hospital_template, "r") as template_file:
+        template_text = template_file.read()
+        template_soup = BeautifulSoup(template_text, 'html.parser')
 
-<a href="#main-content" id="skip-to-content" title="Skip to main content">
-Skip to main content
-</a>
+    os.chdir(raw_dir + "hospital/")
 
- <a href="../index.html" id="home-btn" target="_self">
-<button>
-Home
-  </button>
- </a>
+    raw_docs = glob.glob("*.docx")
 
-<a href="./english/hospital.html" id="hospital-btn" target="_self">
-<button>
-If You Go to the Hospital
-</button>
-</a>
+    #all_pdfs = {}
 
-<a target="_self" href="./english/airport.html">
-<button>If You Are at the Airport</button>
-</a>
+    for file in raw_docs:
 
-<a target="_self" href="./english/old-town-station.html">
-<button>Old Town Transit Station</button>
-</a>
+        filename_segs = file.split("-")
+        language = "-".join(filename_segs[1:]).strip().replace(".docx", "").lower().replace(" ", "-")
 
-<a target="_self" href="./english/legal.html">
-<button>Legal Resources</button>
-</a>
+        #print(language)
+        iso639_code = lang_codes[language]
 
-</nav>
-  </header>
+        html_filename = html_dir + language + "/hospital.html"
+        print(html_filename)
 
-translation_dict[("", "If You Are at the Airport")] = ""
-translation_dict[("", "Old Town Transit Station")] = ""
-translation_dict[("", "Legal Resources")] = ""
-"""
+        page_soup = make_html_page(language, iso639_code, html_filename, template_soup, file, "If You Go to the Hospital", None)
+
+
+
+generate_hospital_pages()
