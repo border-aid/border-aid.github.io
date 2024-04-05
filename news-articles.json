@@ -531,6 +531,15 @@
         },
 
         {
+            "title" : "CBP subjects migrants to grave reproductive injustices",
+            "author" : "Tina Vásquez",
+            "outlet" : "Prism",
+            "pubDate" : "June 6 2023",
+            "url" : "https://prismreports.org/2023/06/06/customs-border-protection-grave-reproductive-injustices/",
+            "communityCorrections" : null
+        },
+
+        {
             "title" : "PHOTOS: ASYLUM SEEKERS FACE HARSH CONDITIONS AS TITLE 42 EXPIRES",
             "author" : "Joe Orellana",
             "outlet" : "Left Coast Right Watch",
@@ -558,6 +567,15 @@
         },
 
         {
+            "title" : "San Diego Volunteers Create Phone-Charging Station for Migrants at US—Mexico Border",
+            "author" : "Renee Schmiedeberg",
+            "outlet" : "NBC 7 San Diego",
+            "pubDate" : "May 14 2023",
+            "url" : "https://www.nbcsandiego.com/news/local/san-diego-volunteers-create-phone-charging-station-for-migrants-at-us-mexico-border/3227598/",
+            "communityCorrections" : null
+        },
+
+        {
             "title" : "This is inhumane’: Hundreds of migrants wait in San Diego County desert, lack food, water, shelter",
             "author" : "Sofía Mejías-Pascoe and Cody Dulaney",
             "outlet" : "inewsource",
@@ -567,11 +585,29 @@
         },
 
         {
+            "title" : "Scenes From the US-Mexico Border as Title 42 Ends",
+            "author" : "Nina Lin", 
+            "outlet" : "NBC 7 San Diego",
+            "pubDate" : "May 11 2023",
+            "url" : "https://www.nbcsandiego.com/news/national-international/scenes-from-the-us-mexico-border-as-title-42-ends/3226181/",
+            "communityCorrections" : null
+        },
+
+        {
             "title" : "Members of Congress demand answers from DHS over asylum seekers held between border walls",
             "author" : "Kate Morrissey",
             "outlet" : "San Diego Union-Tribune",
             "pubDate" : "May 8 2023",
             "url" : "https://www.sandiegouniontribune.com/news/immigration/story/2023-05-08/congress-letter-dhs-asylum-seekers-border-walls",
+            "communityCorrections" : null
+        },
+
+        {
+            "title" : "San Diego Residents Push for Humane Protection of Asylum-Seekers",
+            "author" : "Kelvin Henry", 
+            "outlet" : "NBC 7 San Diego",
+            "pubDate" : "May 7 2023",
+            "url" : "https://www.nbcsandiego.com/news/local/san-diego-residents-push-for-humane-protection-for-asylum-seekers/3223403/",
             "communityCorrections" : null
         }
     ]
