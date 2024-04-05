@@ -1,6 +1,14 @@
 {
     "textArticles" : [
         {
+            "title" : "As injuries on border wall pile up, migrants face another barrier: emergency medical care",
+            "author" : "Sofía Mejías-Pascoe",
+            "outlet" : "inewsource",
+            "pubDate" : "April 3 2024",
+            "url" : "https://inewsource.org/2024/04/03/injuries-on-border-wall-san-diego-emergency-medical-care/",
+            "communityCorrections" : null
+        },
+        {
             "title" : "Vandals who damaged asylum seeker shelter in Jacumba still unidentified",
             "author" : "Abner Häuge",
             "outlet" : "Left Coast Right Watch",
@@ -244,6 +252,15 @@
         },
 
         {
+            "title": "Over 1,000 migrant families separated at border near San Diego since September, advocates say",
+            "author": "Andrea Castillo",
+            "outlet": "LA Times",
+            "pubDate": "December 15 2023",
+            "url": "https://www.latimes.com/politics/story/2023-12-15/migrant-families-at-san-diego-border-immigrant-advocates-letter-dhs",
+            "communityCorrections": null
+        },
+
+        {
             "title" : "Opinion: I’m an emergency medicine doctor volunteering in Jacumba. 911 calls are being ignored. People need help now.",
             "author" : "Theresa H. Cheng",
             "outlet" : "San Diego Union-Tribune",
@@ -385,6 +402,15 @@
             "pubDate" : "November 21 2023",
             "url" : "https://www.kpbs.org/news/border-immigration/2023/11/21/migrant-advocates-say-county-funded-center-is-mismanaged-and-lacks-transparency",
             "communityCorrections" : null
+        },
+
+        {
+            "title": "People Seeking Asylum Confined Outside in Appalling Conditions: Findings and Recommendations from a Monitoring Visit to San Diego",
+            "author": "",
+            "outlet": "Women's Refugee Commission",
+            "pubDate": "November 21 2023",
+            "url": "https://www.womensrefugeecommission.org/research-resources/people-seeking-asylum-confined-outside-in-appalling-conditions-findings-and-recommendations-from-a-monitoring-visit-to-san-diego/",
+            "communityCorrections": null
         },
 
         {
