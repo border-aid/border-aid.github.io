@@ -93,6 +93,16 @@ section {
     max-width: 100vw;
 }
 
+.medium-pic {
+    object-fit: contain;
+    max-height: 40vh;
+    margin: 1rem;
+}
+
+.medium-figure {
+    text-wrap: wrap;
+}
+
 .map {
     object-fit: contain;
     /*max-width: inherit;*/
