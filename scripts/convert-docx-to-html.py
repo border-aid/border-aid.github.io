@@ -391,11 +391,13 @@ def add_old_town_page_features(page_soup, language, lang_copytext):
     airport_link.append(airport_btn)
 
     # Legal Resources
+    """
     legal_label = lang_copytext["Legal Resources"]
     legal_btn = page_soup.new_tag("button")
     legal_btn.string = legal_label
     legal_link = page_soup.find(attrs={'id': 'legal-resource-btn'})
     legal_link.append(legal_btn)
+    """
 
     skip_nav_msg = lang_copytext["Skip to main content"]
     skip_nav_elem = page_soup.find(attrs={'id': 'skip-to-content'})
@@ -405,7 +407,7 @@ def add_old_town_page_features(page_soup, language, lang_copytext):
     page_soup.find(attrs={'id': 'hospital-btn'})['href'] = "hospital.html"
     page_soup.find(attrs={'id': 'oads-btn'})['href'] = "../" + language + ".html"
     page_soup.find(attrs={'id': 'airport-btn'})['href'] = "airport.html"
-    page_soup.find(attrs={'id': 'legal-resource-btn'})['href'] = "legal.html"
+    #page_soup.find(attrs={'id': 'legal-resource-btn'})['href'] = "legal.html"
 
 
 
@@ -668,4 +670,4 @@ def generate_hospital_pages():
 
 
 
-generate_hospital_pages()
+generate_old_town_pages()
