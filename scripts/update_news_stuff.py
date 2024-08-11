@@ -203,6 +203,6 @@ def generate_rss(article_data):
 
 with open(ARTICLES_JSON, "r") as inf:
     article_data = json.load(inf)
-    create_articles_html(article_data)
+    //create_articles_html(article_data)
     generate_rss(article_data)
 

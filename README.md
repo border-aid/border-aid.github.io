@@ -12,6 +12,68 @@
 
 `clean-pdfs.sh` is the script used to strip metadata from PDFs and optimize them. It uses [ExifTool](https://exiftool.org/) and [QPDF](https://github.com/qpdf/qpdf), and assumes that they have been downloaded and built already.
 
+```json
+        {
+            "title" : "",
+            "author" : "",
+            "outlet" : "",
+            "pubDate" : "",
+            "url" : "",
+            "communityCorrections" : null
+        },
+```
+```python
+     <li class="oads-article">
+          <a target="_blank" href=""></a>
+     </li>
+```
+
+
+
+
+
+
+https://www.cbp.gov/newsroom/stats/southwest-land-border-encounters
+https://www.texasobserver.org/border-surveillance-artificial-intelligence-tech/
+https://lailluminator.com/2024/07/06/abuse-immigration/
+https://www.humanetech.com/podcast/why-are-migrants-becoming-ai-test-subjects-with-petra-molnar
+https://www.thedial.world/articles/news/issue-17/artists-at-risk-asylum-migration
+https://austinkocher.com/
+https://www.washingtonpost.com/immigration/interactive/2024/china-migrants-us-border-san-diego-new-york/
+https://www.10news.com/news/local-news/san-diego-news/follow-through-migrants-told-to-evacuate-park-second-day-in-a-row
+https://www.kjzz.org/2024-05-02/content-1878813-us-releasing-hundreds-migrants-san-diego-every-day-city-isnt-responding
+https://www.npr.org/2024/07/13/nx-s1-5035508/california-heat-immigration-us-mexico-border-extreme-temperatures
+https://spectrumnews1.com/ca/la-west/politics/2024/05/23/number-of-migrants-crossing-in-san-diego-region-increase
+https://www.sandiegouniontribune.com/2024/02/21/i-had-an-unforgettable-encounter-with-chinese-migrants-in-jacumba-heres-what-i-learned/
+https://www.reuters.com/world/us/migrants-around-world-traverse-california-desert-reach-us-2024-06-06/
+https://voiceofsandiego.org/2024/07/15/advocates-ask-for-shorter-times-in-custody-for-pregnant-migrants/
+https://www.nbcsandiego.com/news/local/migrants-cross-us-mexico-border-san-ysidro/3493845/
+https://www.npr.org/2024/06/24/g-s1-5716/migrants-asylum-jacumba-border-patrol
+https://capitalandmain.com/migrants-detained-in-san-diego-are-quietly-being-moved-out-of-state
+https://www.cnn.com/interactive/2024/02/world/migrant-crossing-california-cnnphotos/
+https://www.sandiegouniontribune.com/2024/06/08/san-diego-is-a-top-spot-for-border-crossings-how-many-people-arrive-only-to-become-homeless/
+https://www.reuters.com/world/us/new-reality-migrants-us-mexico-border-biden-asylum-ban-takes-effect-2024-06-05/
+https://www.kpbs.org/podcasts/san-diego-news-now/more-migrants-becoming-homeless-in-san-diego
+https://www.nytimes.com/2024/06/02/us/migrants-charities-shelters-threats.html
+https://www.axios.com/local/san-diego/2024/04/25/migrant-aid-money-grant-debate-san-diego
+https://nypost.com/2024/06/10/us-news/turkish-migrants-fall-from-30-foot-border-wall-in-san-diego/
+https://www.10news.com/news/local-news/migrants-stranded-at-san-diego-airport
+https://www.kpbs.org/news/border-immigration/2024/06/06/migrants-are-rattled-and-unsure-as-deportations-begin-under-new-rule-halting-asylum
+https://www.sandiegouniontribune.com/2024/03/16/well-just-rebuild-volunteers-overcome-demolitions-vandals-to-shelter-migrants-near-jacumba-hot-springs/
+https://www.nbcsandiego.com/news/local/migrants-stranded-at-airports-hope-to-reunite-with-relatives-before-christmas/3385392/
+https://www.nbcnews.com/news/asian-america/demographics-migration-us-are-rapidly-shifting-s-change-rcna149623
+https://reliefweb.int/report/united-states-america/people-seeking-asylum-confined-outside-appalling-conditions-findings-and-recommendations-monitoring-visit-san-diego
+https://www.sandiegouniontribune.com/2024/05/24/san-diego-border-patrol-agent-sentenced-for-helping-move-drugs-migrants-across-border-while-on-duty/
+https://www.10news.com/news/local-news/south-bay-news/48-hours-on-the-border-what-happens-when-migrants-arrive-at-border-wall
+https://www.sandiegouniontribune.com/2024/04/25/migrant-services-groups-call-on-county-for-seat-at-the-table-in-deciding-how-to-spend-federal-funds/
+https://www.kpbs.org/news/border-immigration/2024/04/25/migrant-drop-offs-continue-in-san-diego-despite-influx-of-federal-funds
+https://www.kqed.org/news/11995993/migrants-seeking-asylum-in-san-diego-often-experiencing-homelessness
+https://www.kpbs.org/news/border-immigration/2024/07/11/migrants-and-asylum-seekers-living-in-san-diegos-homeless-encampments
+https://calmatters.org/california-divide/2024/02/california-border-migrants/
+https://www.wola.org/2024/04/weekly-u-s-mexico-border-update-march-migration-slows-san-diegos-open-air-encampments-s-b-4-darien-gap/
+https://www.nbcsandiego.com/videos/migrants-face-challenges-after-closure-of-san-diego-countys-migrant-center/3515877/
+
+
 
 
 ```python

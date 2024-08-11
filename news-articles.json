@@ -1,6 +1,60 @@
 {
     "textArticles" : [
         {
+            "title" : "San Diego port police to migrants at park: Leave, or face arrest",
+            "author" : "Sofía Mejías-Pascoe",
+            "outlet" : "inewsource",
+            "pubDate" : "August 7 2024",
+            "url" : "https://inewsource.org/2024/08/07/san-diego-port-police-migrants-at-park-leave-or-risk-citation-or-arrest/",
+            "communityCorrections" : null
+        },
+
+        {
+            "title" : "She cried ‘help!’ for 24 minutes then fell to her death as Border Patrol waited for backup",
+            "author" : "Sofía Mejías-Pascoe",
+            "outlet" : "inewsource",
+            "pubDate" : "July 29 2024",
+            "url" : "https://inewsource.org/2024/07/29/border-patrol-wall-migrant-fall-death-ladder-ems-rescue-response/",
+            "communityCorrections" : null
+        },
+
+        {
+            "title" : "San Diego’s new $20M migrant center could exclude families living on the streets for months",
+            "author" : "Sofía Mejías-Pascoe and Cody Dulaney",
+            "outlet" : "inewsource",
+            "pubDate" : "July 22 2024",
+            "url" : "https://inewsource.org/2024/07/22/san-diego-migrant-transition-day-center-families-homeless-encampments-shelters/",
+            "communityCorrections" : null
+        },
+
+        {
+            "title" : "The dangers of CBP One, the app to request asylum at the US-Mexico border: Extortion, kidnappings and months-long waits",
+            "author" : "Alicia Fàbregas",
+            "outlet" : "EL PAÍS",
+            "pubDate" : "July 14 2024",
+            "url" : "https://english.elpais.com/usa/2024-07-14/the-dangers-of-cbp-one-the-app-to-request-asylum-at-the-us-mexico-border-extorsion-kidnappings-and-months-long-waits.html",
+            "communityCorrections" : null
+        },
+
+        {
+            "title" : "Migrant mothers, children living in tents in San Diego amid shelter shortage",
+            "author" : "Sofía Mejías-Pascoe",
+            "outlet" : "inewsource",
+            "pubDate" : "July 3 2024",
+            "url" : "https://inewsource.org/2024/07/03/san-diego-migrants-homeless-shelter-housing-shortage/",
+            "communityCorrections" : null
+        },
+
+        {
+            "title" : "Border Patrol agent accused of showing photos of his genitals to civilians twice while in uniform",
+            "author" : "Sofía Mejías-Pascoe",
+            "outlet" : "inewsource",
+            "pubDate" : "June 4 2024",
+            "url" : "https://inewsource.org/2024/06/04/border-patrol-agent-photos-genitals-civilians-cbp-aid-workers/",
+            "communityCorrections" : null
+        },
+
+        {
             "title" : "As injuries on border wall pile up, migrants face another barrier: emergency medical care",
             "author" : "Sofía Mejías-Pascoe",
             "outlet" : "inewsource",
@@ -8,6 +62,7 @@
             "url" : "https://inewsource.org/2024/04/03/injuries-on-border-wall-san-diego-emergency-medical-care/",
             "communityCorrections" : null
         },
+
         {
             "title" : "Vandals who damaged asylum seeker shelter in Jacumba still unidentified",
             "author" : "Abner Häuge",
